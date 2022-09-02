@@ -1,0 +1,13 @@
+* root :elfeed:
+** Podcasts :podcast:
+*** [[https://feeds.feedburner.com/dancarlin/history?format=xml][Dan Carlin's Hardcore History]] :history:
+*** [[https://dchhaddendum.libsyn.com/rss][Dan Carlin's Hardcore History Addendum]] :history:
+*** [[https://feeds.fireside.fm/edgecast/rss][EdgeCast]] :ideas:
+** Youtube :youtube:
+*** [[https://www.youtube.com/feeds/videos.xml?channel_id=UCR1D15p_vdP3HkrH8wgjQRw][Internet Historian]] :comedy:
+*** [[https://www.youtube.com/feeds/videos.xml?channel_id=UC8Q7XEy86Q7T-3kNpNjYgwA][Incognito Mode]] :comedy:
+*** [[https://www.youtube.com/feeds/videos.xml?channel_id=UCGeIjGngCkErevSNHdZYD5Q][Storymode]] :comedy:
+*** [[https://www.youtube.com/feeds/videos.xml?channel_id=UCVpankR4HtoAVtYnFDUieYA][Ze Frank]] :comedy:nature:
+** Blogs :blogs:
+*** [[https://ciechanow.ski/atom.xml][Bartosz Ciechanowski]]
+*** [[https://brave.com/blog/index.xml][Brave Blog]]
