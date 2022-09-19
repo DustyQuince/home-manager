@@ -91,16 +91,18 @@
 (setq rmh-elfeed-org-files (list "~/elfeed.org"))
 
 ;; Org-roam setup
+(setq org-roam-directory (file-truename "~/org/roam"))
+
 (setq org-capture-templates
-      '(("g" "Goal" entry (id "goals/")
+      '(("g" "Goal" entry (file "goals.org")
 "*** <Fill>
 - [ ] <Achieved Result>
 - [ ] <n> Minutes of Focus
 "
 )))
 
-(setq org-roam-directory (file-truename "~/org/roam"))
 (org-roam-db-autosync-mode)
+
 (setq org-roam-dailies-directory "daily/")
 
 (setq org-roam-dailies-capture-templates
