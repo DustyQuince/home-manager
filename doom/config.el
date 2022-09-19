@@ -69,16 +69,6 @@
 ;; Disables incredibly annoying functionality
 (setq haskell-interactive-popup-errors nil)
 
-;; Org-roam setup
-(setq org-roam-directory (file-truename "~/org/roam"))
-(org-roam-db-autosync-mode)
-(setq org-roam-dailies-directory "daily/")
-(setq org-roam-dailies-capture-templates
-      '(("d" "default" entry
-         "* %?"
-         :target (file+head "%<%Y-%m-%d>.org"
-                            "#+title: %<%Y-%m-%d>\n"))))
-
 (use-package lsp-python-ms
   :ensure t
   :hook (python-mode . (lambda ()
@@ -100,8 +90,50 @@
 ;; elfeed config
 (setq rmh-elfeed-org-files (list "~/elfeed.org"))
 
-;; Undo tree wherever
-;; (add-hook ’evil-local-mode-hook ’turn-on-undo-tree-mode)
+;; Org-roam setup
+(setq org-capture-templates
+      '(("g" "Goal" entry (id "goals/")
+"*** <Fill>
+- [ ] <Achieved Result>
+- [ ] <n> Minutes of Focus
+"
+)))
+
+(setq org-roam-directory (file-truename "~/org/roam"))
+(org-roam-db-autosync-mode)
+(setq org-roam-dailies-directory "daily/")
+
+(setq org-roam-dailies-capture-templates
+      '(("d" "default" entry
+"* Schedule
+** Work Goals
+*** <Fill>
+- [ ] <Achieved Result>
+- [ ] <n> Minutes of Focus
+** Work Achievements
+** Other Goals
+** Other Achievements
+
+* Workout
+** <Activity>
+*** <Time>
+
+* Maintenance
+- [ ] Pistols
+  - 0
+- [ ] Pull-ups
+  - 0
+- [ ] Shoulder flow
+- [ ] Band-assisted Hamstring Stretch
+
+* Daily Meeze
+** Clean Your Station
+- [ ] Empty and Log Physical Inputs
+- [ ] Clear and Log Digital Inputs
+"
+:target (file+head "%<%Y-%m-%d>.org"
+                   "#+title: %<%Y-%m-%d>\n"))))
+
 
 ;; Here are some additional functions/macros that could help you configure Doom:
 ;;

@@ -15,7 +15,5 @@
     libreoffice
     hugo
     yt-dlp
-    exfat
-    exfatprogs
   ];
 }

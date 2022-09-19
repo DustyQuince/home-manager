@@ -6,5 +6,5 @@
   home.file.".doom.d/packages.el".source = ./doom/packages.el;
   home.file."elfeed.org".source = ./doom/elfeed.org;
 
-  home.packages = with pkgs; [ atom emacs graphviz neovim vim ];
+  home.packages = with pkgs; [ atom graphviz neovim vim ];
 }
